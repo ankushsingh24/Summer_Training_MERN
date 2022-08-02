@@ -1,5 +1,34 @@
-Q1. Create a Function to Wish a User Happy Birthday, Ask User Date and Month and if it match with today data and month wish him/her
-Hint: prompt function for user input
+Q1. Create a Function to Wish a User Happy Birthday, Ask User Date and Month and if it match with today data and month wish him/her.
+
+Ans1:
+function HBD(D, M)
+{
+    if(new Date().getDate() == D && new Date().getMonth() + 1 == M)
+    {
+        console.log("HAPPY BIRTHDAY !!!")
+    }    
+
+    else
+    {
+        console.log("AAJ NHI BAAD MEIN AAIO XD");
+    }
+}
+
+D = prompt("ENTER THE DATE YOU BORN");
+'2' // current date
+M = prompt("ENTER THE MONTH YOU BORN");
+'8' // current month
+HBD(D, M);
+HAPPY BIRTHDAY ANKUSH !!!
+
+D = prompt("ENTER THE DATE YOU BORN");
+'4'
+M = prompt("ENTER THE MONTH YOU BORN");
+'2'
+HBD(D, M);
+AAJ NHI HAI BAAD MEIN AAIO XD !!!
+
+x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x
 
 Q2. Enter the Age and Compute Total Weeks in a Human Life
 
