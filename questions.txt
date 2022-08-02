@@ -97,3 +97,37 @@ x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x
 
 Q5. Add the Following Case in add function
 a) add(10,[1,"2",3],[one, "Amit",  two,"100"],"20")
+
+Ans5:
+function one()
+{
+    return 1;    
+}
+
+function two()
+{
+    return 2;
+}
+
+add(one, two, "3", 4, "Ankush");
+7
+
+function add()
+{
+   // console.log("I am Add ", arguments.length);
+    var sum = 0;
+
+    for(var i = 0; i<arguments.length; i++)
+    {
+        if(typeof arguments[i] =="function")
+        {
+            arguments[i] = arguments[i]();
+        }
+
+        sum = sum + (isNaN(parseInt(arguments[i])) ? 0 : parseInt(arguments[i]));
+    }
+    return sum;
+}
+
+add(one, two, "3",4,"Amit");
+10
